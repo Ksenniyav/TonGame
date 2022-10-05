@@ -1,11 +1,15 @@
 html,body {
-    background-color: #333;
+    background-image: url(../media/content/bg.svg);
     color: #fff;
     font-family: helvetica, arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-repeat:no-repeat;
+/* background-size:contain; */
+background-position:center;
     font-size: 12pt;
 }
+
 
 #canvas {
     width: 480px;
@@ -64,7 +68,7 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
-.startContainer {
+.Container {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -325,4 +329,29 @@ summary::-webkit-details-marker {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+}
+.header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 64px;
+
+}
+.Switch {
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    max-width: 864px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 80p;
+    justify-content: center;
+}
+.Switch-title {
+    display: flex;
+    color: #000;
+    gap: 20px;
+    border-bottom: 3px solid #FF7C06;
 }
