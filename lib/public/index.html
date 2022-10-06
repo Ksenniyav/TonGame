@@ -21,13 +21,15 @@
 	</div>
 	<div id="start" >
 		<div class="Switch">
-			<div class="Switch-title"><p>Open game </p>
-				<p> Past game </p> </div>
+			<div class="Switch-title">
+				<p  onclick="sw(1)" id="Sw1">Open game </p>
+				<p  onclick="sw(2)" id="Sw2"> Past game </p> </div>
 		</div>
 			
 		
 		<div class="startContainer">
 			<h1 id="walletHeader" style="display:none">Please connect wallet</h1>
+			<button class="startBtn" id="connect" style="display:none">Connect Wallet</button>
 			<h1 id="walletHeaderDisconnect" style="display:none">Disconnect wallet</h1>
 			<span id="startTonBalance" style="display:none">Your TON balanceL</span>
 			<div class="withdrawWrapper">
@@ -37,7 +39,6 @@
 			<button class="startBtn" id="deposit" style="display:none">Deposit</button>
 			<p id="feeInfo" style="display:none">...</p>
 			<span id="startInternalBalance" style="display:none">Your in-game TON balance:</span>
-			<button class="startBtn" id="connect" style="display:none">Connect Wallet</button>
 			<button id="btn_modal_window">New game</button>
 			<div id="my_modal" class="modal">
 				<div class="modal_content">
@@ -63,13 +64,6 @@
 					<div>Pending</div>
 				</div>
 			</div>
-			<div id="install_wallet_modal" class="modal">
-				<div class="modal_content">
-					<span class="close_modal_window">×</span>
-					<div>You have to install wallet</div>
-					<button id="reload_button">Reload</button>
-				</div>
-			</div>
 				<details>
 					<summary><h2>Past Games</h2></summary>
 					<h4 id="pastgames-empty">Empty</h4>
@@ -88,5 +82,6 @@
 		</div>
 	</div>
 	</div>
+	<script src="../sw.js"></script>
 </body>
 </html>
