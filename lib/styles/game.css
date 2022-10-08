@@ -307,6 +307,8 @@ input[type=number] {
 }
 .modal .modal_content {
     display: flex;
+    width: 504px;
+    height: 502px;
     background: #FFFFFF;
     margin: 15% auto;
     padding: 20px;
