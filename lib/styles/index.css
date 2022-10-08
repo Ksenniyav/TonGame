@@ -301,7 +301,7 @@ summary::-webkit-details-marker {
     z-index: 1000;
 }
 .modal .modal_content {
-    background-color: #000000;
+    background-color: #FFFFFF;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
