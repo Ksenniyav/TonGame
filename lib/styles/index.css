@@ -1,6 +1,6 @@
 html,body {
     background-image: url(../media/content/bg.svg);
-    color: #fff;
+    color: ;
     font-family: helvetica, arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -301,8 +301,10 @@ summary::-webkit-details-marker {
     z-index: 1000;
 }
 .modal .modal_content {
-    background-color: #FFFFFF;
+    background-color: white;
     margin: 15% auto;
+    max-width: 300px;
+    color: black;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -397,4 +399,12 @@ summary::-webkit-details-marker {
 .input_map {
     background: #F2F2F2;
     border-radius: 8px;
+}
+#amountToPlayText {
+    color: 393939;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
