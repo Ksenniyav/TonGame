@@ -20,6 +20,7 @@
 			</button>
         </div>
 	</div>
+	
 	<div class="content">
 		<div ><img class="content_img" src="../media/content/chap1.svg" alt=""></div>
 		<div class="content__column" >
@@ -33,8 +34,19 @@
 	<div id="start" >
 		<div class="Switch">
 			<div class="Switch-title">
-				<p  onclick="sw(1)" id="Sw1">Open game </p>
-				<p  onclick="sw(2)" id="Sw2"> Past game </p> </div>
+				<p  onclick="sw(1)" id="Sw1"><h2>Open Games</h2>
+					<h4 id="opengames-empty">Empty or only your game</h4>
+					<div id="opengames">
+						<ul id="opengames-list">
+	</ul> </p>
+				<p  onclick="sw(2)" id="Sw2"> <details>
+					<summary><h2>Past Games</h2></summary>
+					<h4 id="pastgames-empty">Empty</h4>
+					<div id="pastgames">
+						<ul id="pastgames-list">
+						</ul>
+					</div>
+				</details> </p> </div>
 		</div>
 			
 		
@@ -91,6 +103,10 @@
 				</div>
 		</div>
 	</div>
+	</div>
+	<div class="bottom inscription">
+		<p>Inventory</p>
+		<img src="../media/content/bottom.svg" alt="">
 	</div>
 	<script src="../sw.js"></script>
 </body>
