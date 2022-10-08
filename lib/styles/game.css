@@ -308,16 +308,13 @@ input[type=number] {
 }
 .modal .modal_content {
     max-width: 504px;
-    height: 502px;
     background: #FFFFFF;
     text-align: center;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
     z-index: 99999;
-    width: 504px;
-    height: 502px;
     border-radius: 16px; 
 }
 .modal .modal_content .close_modal_window {
