@@ -306,7 +306,6 @@ input[type=number] {
     z-index: 1000;
 }
 .modal .modal_content {
-    display: flex;
     width: 504px;
     height: 502px;
     background: #FFFFFF;
