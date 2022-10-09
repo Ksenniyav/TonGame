@@ -49,10 +49,9 @@ background-position:center;
     margin: 0 auto;;
     background-color: rgb(241, 91, 10);
     font-weight: 500;
-    color: #222;
-}
-.createGame:hover {
-    background-color: rgb(168, 72, 20);
+font-size: 20px;
+line-height: 24px;
+    color: rgb(255, 255, 255);
 }
 
 .inputName {
@@ -266,7 +265,6 @@ input[type=number] {
     display: block;
     background-color: #fefefe;
     margin: 15% auto; /* 15% сверху и по центру */
-    padding: 20px;
     border: 1px solid #888;
     width: 40%; /* Может быть больше или меньше, в зависимости от размера экрана */
 }
@@ -274,7 +272,7 @@ input[type=number] {
 /* Кнопка закрытия */
 .close {
     color: #aaa;
-    float: right;
+    /* float: right; */
     font-size: 28px;
     font-weight: bold;
 }
@@ -306,19 +304,19 @@ summary::-webkit-details-marker {
 }
 .modal .modal_content {
     background-color: white;
-    
+    border-radius: 18px;
     margin: 15% auto;
     max-width: 504px;
     color: black;
-    padding: 20px;
+    /* padding: 20px; */
     border: 1px solid #888;
     
     z-index: 99999;
 }
 .modal .modal_content .close_modal_window {
-    
-    float: right;
-    font-size: 28px;
+    color: #FF7C06    ;
+    /* float: right; */
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -332,6 +330,7 @@ summary::-webkit-details-marker {
 }
 .close_modal_window__header {
     font-weight: 700;
+    margin : 0 auto;
 font-size: 20px;
 line-height: 24px;
 color: #FF7C06;  
@@ -422,8 +421,12 @@ color: #FF7C06;
 .button_modal {
     background-image: url(../media/content/backgraund_modal.svg);
     display: flex;
+    background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
     flex-direction: column;
     gap: 40px;
+    padding: 20px 20px 30px 20px;
 }
 .button_modal__left{ 
     display: flex;
@@ -433,9 +436,44 @@ color: #FF7C06;
 .close_mobal_title {
     border-bottom:  1px solid ;
     color: #C6C6C6;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
 
 }
 .modal_imput {
     display: flex;
+    padding: 20px;
+    flex-direction: column;
     gap: 20px;
+    border-bottom:  1px solid ;
+    color: #C6C6C6;
+}
+.input_S{
+    display: flex;
+    justify-content: space-between;
+}
+.modal_imput-1 {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom:  1px solid ;
+    color: #C6C6C6;
+}
+#amountPerDeathText{
+    display: flex;
+    justify-content: space-between;
+}
+#amountToPlayText{
+    display: flex;
+    justify-content: space-between;
+}
+input { 
+    border-radius: 10px;
+    border: 1px solid #FF7C06;
+    padding: 6px 8px ;
+
 }
