@@ -41,10 +41,12 @@ background-position:center;
     border: none;
     cursor: pointer;
     padding: 0 24px;
-    border-radius: 50px;
+    border-radius: 8px;
     min-width: 200px;
+    max-width: 160px;
     height: 50px;
     font-size: 18px;
+    margin: 0 auto;;
     background-color: rgb(241, 91, 10);
     font-weight: 500;
     color: #222;
@@ -140,7 +142,9 @@ input[type=number] {
     }
 }
 #canvasHeader {
-    padding: 0 24px;
+    padding: 0 24px;background-repeat:no-repeat;
+background-size:contain;
+background-position:center;
     margin: 25px;
 }
 
@@ -302,12 +306,13 @@ summary::-webkit-details-marker {
 }
 .modal .modal_content {
     background-color: white;
+    
     margin: 15% auto;
-    max-width: 300px;
+    max-width: 504px;
     color: black;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    
     z-index: 99999;
 }
 .modal .modal_content .close_modal_window {
@@ -324,6 +329,12 @@ summary::-webkit-details-marker {
     justify-content: space-between;
     padding: 32px 64px;
 
+}
+.close_modal_window__header {
+    font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #FF7C06;  
 }
 .Switch {
     display: flex;
@@ -407,4 +418,24 @@ summary::-webkit-details-marker {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+}
+.button_modal {
+    background-image: url(../media/content/backgraund_modal.svg);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.button_modal__left{ 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.close_mobal_title {
+    border-bottom:  1px solid ;
+    color: #C6C6C6;
+
+}
+.modal_imput {
+    display: flex;
+    gap: 20px;
 }

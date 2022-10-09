@@ -49,13 +49,21 @@
 			<div id="my_modal" class="modal">
 				<div class="modal_content">
 					<span class="close_modal_window">×</span>
+					<div class="close_mobal_title">
+					<h1 class="close_modal_window__header">New game</h1>	
+				</div>
+				<div class="modal_imput">
 					<div class="input_S">Map (coming soon) <input placeholder="Steel plant" disabled="true"/></div>
 					<div class="input_S">Number of players (coming soon) <input placeholder="2 players" disabled="true"/></div>
+				</div>
+					
 					<div id="amountPerDeathText" style="display: none;">Bet per round <input id="amountPerDeath" placeholder="ROSE" required/></div>
 					<div id="amountToPlayText" style="display: none;">Number of rounds <input type="number" id="amountToPlay" min="1" max="10" required/></div>
+					<div class="button_modal">
 					<div>Total prize pool: <span id="totalPrizePool">None</span></div>
 					<div>Your deposit: <span id="yourDeposit">None</span></div>
-					<button class="createGame btn btn-white btn-big" disabled="disabled" id="createGame">Create</button>	
+					
+						<button class="createGame btn btn-white btn-big" disabled="disabled" id="createGame">Create</button></div>
 				</div>
 			</div>
 			<div id="confirmation_modal" class="modal">
